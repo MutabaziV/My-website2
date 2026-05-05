@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>www.MIPC.org</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('u6.PNG');
+            background-size: cover;
+
+           
+        }
+
+        #mut { 
+           
+            width: 150px; 
+            text-align: center; 
+            height: 30px; 
+            animation: bounce 1s infinite; 
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(20px); }
+        }
+
+        #Moon { color: blue; }
+
+    #cross {
+            background-color: white;
+            width: fit-content;        
+            margin-left: 300px ;
+            margin-top: -20px;         
+            padding: 6px 10px;        
+            border-radius: 50px;      
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex;             
+            align-items: center;       
+            gap: 5px;                  
+        }
+
+        #cross a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 18px;        
+            border-radius: 40px;       
+            transition: all 0.3s ease;
+            white-space: nowrap;      
+        }
+
+        #cross a:hover {
+            background-color: #f1f3f4; 
+            color: blue;
+        }
+        .info-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            padding: 15px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2); 
+            border-radius: 10px;
+            overflow: hidden; 
+        }
+        #box1 {
+            width: 300px;
+            height: 280px;
+            background-color: white;
+            margin-top: 65px;
+            border-radius: 10px;
+            margin-left: 15px;
+            
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        #box2 {
+            width: 300px;
+            height: 190px;
+            background-color: white;
+            margin-top: -280px; 
+            border-radius: 10px;
+            margin-left: 900px;
+           
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        #box3 {
+            width: 300px;
+            height: 190px;
+            background-color: white;
+            margin-top: 30px;
+            border-radius: 10px;
+            margin-left: 900px;
+            
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .l6 {
+            color: #333;
+            font-weight: bold;
+            border-bottom: 2px solid blue;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+       
+        p{
+         font-size: 13px   
+        }
+        footer {
+    background-color: #2c3e50; 
+    min-height: 150px;
+    margin-top: 100px;
+    padding: 30px 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    clear: both; 
+}
+
+.l1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.l2 {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.l2 h4 {
+    border-bottom: 2px solid #3498db;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.l2 p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #bdc3c7;
+}
+
+.l3 {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #3e4f5f;
+    font-size: 12px;
+    color: #95a5a6;
+}
+    </style>
+</head>
+<body >
+
+    <div id="mut">
+        <h1><span id="Moon">M</span>IPC</h1>
+    </div>
+
+    <div id="cross">
+        <a id="a" href="index.html">Home</a>
+        <a id="b" href="about.html">About us</a>
+        <a id="c" href="academics.html">Academics</a>
+        <a id="d" href="service.html">Services</a>
+        <a id="e" href="admission.html">Admission</a>
+        <a id="f" href="gallery.html">Gallery</a>
+        <a id="g" href="contact.html">Contact Us</a>
+        <a id="h" href="appli.html">Application Guide</a>
+    </div>
+
+    <div id="box1" class="info-box">
+        <div class="l6">Notice Board</div>
+        <p>• <b>School Reopening:</b> Classes will resume on Monday, May 4th.</p>
+        <p>• <b>Uniform Policy:</b> Please ensure all students are in full formal attire for the assembly.</p>
+        <p >• <b>Safety Drill:</b> Annual fire safety and evacuation drill will take place this Wednesday.</p>
+        <p >• <b>Lost & Found:</b> Items collected from the playground are now at the front desk.</p>
+    </div>
+
+    <div id="box2" class="info-box">
+        <div class="l6">Student Life</div>
+        <p >• <b>Drama Club:</b> Auditions for the summer play begin at 3 PM in the auditorium.</p>
+        <p >• <b>Green Campus:</b> Join the tree planting drive this Saturday morning.</p>
+        <p>• <b>Sports:</b> Football trials for the under-16 team start tomorrow.</p>
+    </div>
+
+    <div id="box3" class="info-box">
+        <div class="l6">Facility Updates</div>
+        <p></p>• <b>Wi-Fi:</b> High-speed internet is now available in the student lounge area.</p>
+        <p>• <b>Cafeteria:</b> Check the new weekly menu featuring healthy meal options.</p>
+        <p>• <b>Lab Access:</b> The computer lab will be closed for maintenance on Sunday.</p>
+    </div>
+
+    <footer>
+    <div class="l1">
+        <div class="l2">
+            <h4>MIPC Musanze</h4>
+            <p>Empowering Rwanda through quality technical education and innovation in the heart of the Northern Province.</p>
+        </div>
+
+        <div class="l2">
+            <h4>Quick Access</h4>
+            <p>
+                • Student Portal<br>
+                • Staff Webmail<br>
+                • Exam Results<br>
+                • Download Prospectus
+            </p>
+        </div>
+
+        <div class="l2">
+            <h4>Office Hours</h4>
+            <p>
+                Mon - Fri: 8:00 AM - 5:00 PM<br>
+                Sat: 9:00 AM - 12:00 PM<br>
+                Closed on Public Holidays
+            </p>
+        </div>
+    </div>
+
+    <div class="l3">
+        &copy; 2026 Musanze Inter-Professional College (MIPC). Developed by Valentin.
+    </div>
+</footer>
+
+
+</body>
+</html>
