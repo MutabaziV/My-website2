@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>www.MIPC.org</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+              background-image: url('u6.PNG');
+            background-size: cover;
+
+        }
+
+        #mut { 
+           
+            width: 150px; 
+            text-align: center; 
+            height: 30px; 
+            animation: bounce 1s infinite; 
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(20px); }
+        }
+
+        #Moon { color: blue; }
+
+       
+        #cross {
+            background-color: white;
+            width: fit-content;        
+            margin-left: 300px ;
+            margin-top: -20px;         
+            padding: 6px 10px;        
+            border-radius: 50px;      
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex;             
+            align-items: center;       
+            gap: 5px;                  
+        }
+
+        #cross a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 18px;        
+            border-radius: 40px;       
+            transition: all 0.3s ease;
+            white-space: nowrap;      
+        }
+
+        #cross a:hover {
+            background-color: #f1f3f4; 
+            color: blue;
+        }
+
+        .info-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            padding: 15px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2); 
+            border-radius: 10px;
+            overflow: hidden; 
+        }
+        #box1 {
+            width: 300px;
+            height: 280px;
+            background-color: white;
+            margin-top: 65px;
+            border-radius: 10px;
+            margin-left: 15px;
+           
+            padding: 15px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        #box2 {
+            width: 300px;
+            height: 190px;
+            background-color: white;
+            margin-top: 65px; 
+            border-radius: 10px;
+            margin-left: 900px;
+           
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        #box3 {
+            width: 300px;
+            height: 190px;
+            background-color: white;
+            margin-top: 30px;
+            border-radius: 10px;
+            margin-left: 900px;
+           
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .for {
+            color: #333;
+            font-weight: bold;
+            border-bottom: 2px solid blue;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        p { font-size: 13px; line-height: 1.5; }
+
+        
+        footer {
+            background-color: #2c3e50; 
+            min-height: 150px;
+            margin-top: 100px;
+            padding: 30px 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            clear: both; 
+        }
+
+        .l1 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .l2 { 
+            width: 250px;
+             margin-bottom: 20px; 
+            }
+        .l2 h4 { 
+            border-bottom: 2px solid #3498db; 
+            padding-bottom: 10px; margin-bottom: 15px;
+             font-size: 16px;
+              color: white; 
+            }
+        .l2 p {
+             font-size: 13px;
+              line-height: 1.6;
+               color: #bdc3c7;
+             }
+        .l3 {
+             text-align: center; 
+             padding-top: 20px; 
+             border-top: 1px solid #3e4f5f;
+              font-size: 12px; 
+              color: #95a5a6; 
+            }
+
+        .register {
+            color: blue;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mut">
+        <h1><span id="Moon">M</span>IPC</h1>
+    </div>
+
+    <div id="cross" class="info-box">
+        <a href="INTERN.HTML">Home</a>
+        <a href="about us.html">About us</a>
+        <a href="academics.html">Academics</a>
+        <a href="service.html">Services</a>
+        <a href="admission.html">Admission</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="appli.html">Application Guide</a>
+    </div>
+
+    <div id="box1" class="info-box">
+        <div class="for">Trainee Registration</div>
+        <p>• <b>Step 1:</b> Fill names as parent given to you.</p>
+        <p>• <b>Step 2:</b> Upload your National ID / Parent or gurdian Id.</p>
+        <p>• <b>Step 3:</b> Need for Level and Trade.</p>
+        <p>• <b>Step 4:</b> Need for You Date of Birth.</p>
+        <p>• <b>Step 5:</b> Choose if you are Femle or Male.</p>
+        <a href="registration.html" class="register">Trainee Registration</a>
+    </div>
+
+    <div id="box2" class="info-box">
+        <div class="for">Trainer Registration</div>
+        <p>• Submit your updated CV and certified degree copies.</p>
+        <p>• Attach your pedagogy training certificates.</p>
+        <a href="trainer.html" class="register">Trainer register</a>
+    </div>
+
+    <div id="box3" class="info-bpox">
+        <div class="for">Worker Registration</div>
+        <p>• Provide your ID copy and criminal record clearance.</p>
+        <p>• Attach proof of previous work experience.</p>
+        <a href="worker.html" class="register">Worker register</a>
+    </div>
+
+    <footer>
+        <div class="l1">
+            <div class="l2">
+                <h4>MIPC Musanze</h4>
+                <p>Empowering Rwanda through quality technical education and innovation in the heart of the Northern Province.</p>
+            </div>
+
+            <div class="l2">
+                <h4>Quick Access</h4>
+                <p>
+                    • Student Portal<br>
+                    • Staff Webmail<br>
+                    • Exam Results<br>
+                    • Download Prospectus
+                </p>
+            </div>
+
+            <div class="l2">
+                <h4>Office Hours</h4>
+                <p>
+                    Mon - Fri: 8:00 AM - 5:00 PM<br>
+                    Sat: 9:00 AM - 12:00 PM<br>
+                    Closed on Public Holidays
+                </p>
+            </div>
+        </div>
+
+        <div class="l3">
+            &copy; 2026 Musanze Inter-Professional College (MIPC). Developed by Valentin.
+        </div>
+    </footer>
+
+</body>
+</html>

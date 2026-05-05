@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>www.MIPC.org</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #mut {
+            width: 150px;
+            text-align: center;
+            height: 40px;
+            margin: 20px auto;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(10px); }
+        }
+
+        #Moon { color: blue; }
+
+        .l1 {
+            max-width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid blue;
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+
+        .l3{
+            margin-bottom: 15px;
+        }
+
+        input[type="text"], 
+        input[type="email"], 
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .l5 {
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: blue;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0000cd;
+        }
+
+        a {
+            background-color: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+
+        #msg {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mut">
+        <h1><span id="Moon">M</span>IPC</h1>
+    </div>
+
+    <div class="l1">
+        <h1>Trainee's Registration Form</h1>
+        <form id="regForm">
+            <div class="l3">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+
+            <div class="l3">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="l3">
+                <input type="text" id="idInput" placeholder="ID Number (16 digits)" maxlength="16" required>
+            </div>
+
+            <div class="l3">
+                <select required>
+                    <option value="" disabled selected>Select Level & Trade</option>
+                    <option>Level 3 - SWD</option>
+                    <option>Level 4 - SWD</option>
+                    <option>Level 5 - SWD</option>
+                </select>
+            </div>
+
+            <div class="l3">
+                <label>Date of Birth:</label>
+                <input type="date" id="dobInput" required>
+            </div>
+
+            <div class="l3">
+                <input type="text" id="indexInput" placeholder="Index Number (16 digits)" maxlength="16" required>
+            </div>
+
+            <div class="l5">
+                 <a href="appli.html">← Return</a>
+            </div>
+
+            <input type="submit" value="Register Now">
+            <div id="msg"></div>
+        </form>
+    </div>
+
+    <script>
+        const idInput = document.getElementById('idInput');
+        const indexInput = document.getElementById('indexInput');
+        const dobInput = document.getElementById('dobInput');
+        const msg = document.getElementById('msg');
+        const form = document.getElementById('regForm');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const birthDateValue = dobInput.value;
+            let birthYear = 0;
+            if (birthDateValue) {
+                birthYear = parseInt(birthDateValue.split('-')[0]);
+            }
+            
+            let errors = [];
+
+            if (idInput.value.length < 16) {
+                errors.push("ID Number (must be 16 digits)");
+            }
+            if (indexInput.value.length < 16) {
+                errors.push("Index Number (must be 16 digits)");
+            }
+            if (birthYear > 2010) {
+                errors.push("Birth Year (must be 2010 or less)");
+            }
+
+            if (errors.length > 0) {
+                msg.style.color = "red";
+                if (errors.length === 1) {
+                    msg.innerHTML = "Please correct this remaining error:<br>• " + errors[0];
+                } else {
+                    msg.innerHTML = "Please correct these " + errors.length + " uncorrect fields:<br>• " + errors.join("<br>• ");
+                }
+            } 
+            else {
+                msg.style.color = "green";
+                msg.textContent = "All information is correct! Redirecting in 3 seconds...";
+                
+                setTimeout(function() {
+                    window.location.href = "INTERN.HTML";
+                }, 3000);
+            }
+        });
+    </script>
+
+</body>
+</html>
