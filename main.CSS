@@ -1,0 +1,6 @@
+/* Add this to your CSS */
+a:hover {
+    color: blue;
+    font-weight: bold;
+    transition: 0.3s;
+}
