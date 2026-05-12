@@ -56,11 +56,25 @@
             white-space: nowrap;      
         }
 
-        #cross a:hover {
-            background-color: #f1f3f4; 
-            color: blue;
-        }
-        
+       #cross a:link {
+  color: blue;
+}
+
+
+ #cross a:visited {
+  background-color: purple;
+}
+
+
+#cross a:hover {
+  color: rgb(250, 246, 246);
+  background-color:#83c9f8 ;
+}
+
+#cross a.active-link {
+    background-color: #3498db; 
+    color: white !important; 
+}
         fieldset { 
             background-color: white; 
             border: 1px solid #ddd; 
@@ -177,7 +191,7 @@
         <a id="d" href="service.html">Services</a>
         <a id="e" href="admission.html">Admission</a>
         <a id="f" href="gallery.html">Gallery</a>
-        <a id="g" href="contact.html">Contact Us</a>
+        <a class="active-link" id="g" href="contact.html">Contact Us</a>
         <a id="h" href="appli.html">Application Guide</a>
     </div>
 
