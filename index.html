@@ -55,11 +55,25 @@
             transition: all 0.3s ease;
             white-space: nowrap;      
         }
+   #cross a:link {
+  color: blue;
+}
 
-        #cross a:hover {
-            background-color: #f1f3f4; 
-            color: blue;
-        }
+
+ #cross a:visited {
+  background-color: purple;
+}
+
+
+#cross a:hover {
+  color: rgb(250, 246, 246);
+  background-color:#83c9f8 ;
+}
+
+#cross a.active-link {
+    background-color: #3498db; 
+    color: white !important;   
+       
         .b1 {
             background-color: white;
             border: 1px solid #ddd;
@@ -169,7 +183,7 @@
     </div>
 
     <div id="cross">
-        <a id="a" href="index.html">Home</a>
+        <a class="active-link" id="a" href="index.html">Home</a>
         <a id="b" href="about.html">About us</a>
         <a id="c" href="academics.html">Academics</a>
         <a id="d" href="service.html">Services</a>
